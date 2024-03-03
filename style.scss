@@ -1,11 +1,15 @@
 $base-color-1: rgb(112, 107, 61);
 $base-color-2: rgb(168, 165, 132);
 $base-color-3: rgb(59, 58, 43);
+$base-color-4: rgb(185, 185, 174);
 $base-font-1: small-caps bold 24px/1 sans-serif;
 
 // Style pour le header
 
-.nav-on,
+body,
+.nav-on {
+  background-color: $base-color-4;
+}
 footer,
 main {
   background-color: $base-color-2;
@@ -25,8 +29,8 @@ header > nav > div > div > ul > li {
 // Style pour le footer
 
 footer {
-  height: 25px;
-  padding: 20px 0;
+  height: 40px;
+  width: auto;
   text-align: center;
   font: $base-font-1;
 }
@@ -38,5 +42,6 @@ footer {
   }
   footer {
     padding: 20px 10px;
+    margin-bottom: 10px;
   }
 }
