@@ -1,3 +1,26 @@
+@charset "UTF-8";
+.nav-on {
+  background-color: rgb(168, 165, 132);
+}
 
+.nav-in {
+  background-color: rgb(112, 107, 61);
+}
+
+header > nav > div > div > ul > li {
+  font: small-caps bold 24px/1 sans-serif;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+/* Media query pour les écrans plus petits */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column; /* Afficher les éléments du menu en colonne */
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

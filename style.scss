@@ -1,0 +1,42 @@
+$base-color-1: rgb(112, 107, 61);
+$base-color-2: rgb(168, 165, 132);
+$base-color-3: rgb(59, 58, 43);
+$base-font-1: small-caps bold 24px/1 sans-serif;
+
+// Style pour le header
+
+.nav-on,
+footer,
+main {
+  background-color: $base-color-2;
+}
+.nav-in {
+  background-color: $base-color-1;
+}
+
+header > nav > div > div > ul > li {
+  font: $base-font-1;
+}
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+// Style pour le footer
+
+footer {
+  height: 25px;
+  padding: 20px 0;
+  text-align: center;
+  font: $base-font-1;
+}
+
+/* Media query pour les écrans plus petits */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column; /* Afficher les éléments du menu en colonne */
+  }
+  footer {
+    padding: 20px 10px;
+  }
+}
